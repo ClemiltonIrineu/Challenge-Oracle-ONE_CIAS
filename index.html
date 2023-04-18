@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=auto, initial-scale=1.0">
+    <title>Decodificador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"> defer </script>
+</head>
+
+<body>
+    <header>
+        <h1> <img src="logo_Alura.png">Decodificador de Texto</h1>
+    </header>
+
+    <main>
+        <section class="area-pesquisa">
+            <input type="text" id="texto" name="texto" class="texto" placeholder="Digite seu texto aqui"
+                oninput="validacao()" autofocus required>
+            <div>
+                <h2><img src="atencao.png"> Apenas letras minúsculas e sem acento.</h2>
+                <button onclick="criptar()" class="btnCriptografar" name="btn-criptografar"> Cripitografar </button>
+                <button onclick="descriptar()" class="btnDescriptografar" name="btn-descriptografar"> Descriptografar
+                </button>
+            </div>
+        </section>
+
+        <section class="caixa-visualizar">
+            <div id="frase">
+                <h3></h3> <!-- Apresentação da frase criptografa ou descriptografada -->
+            </div>
+            <div id="not-frase">
+                <img src="img_Pesquisa.png">
+                <p> Nenhuma mensagem encontrada!<br><br>
+                    Digite um mensagem que deseje criptografar ou descriptografar. </p>
+            </div>
+            <button onclick="copiarTexto()" id="btn-copiar" class="btnCopiar"> Copiar </button>
+        </section>
+    </main>
+
+    <footer>
+        <p> Alura Challenges Oracle ONE: Desenvolvido por CIAS - 2023</p>
+    </footer>
+</body>
+
+</html>

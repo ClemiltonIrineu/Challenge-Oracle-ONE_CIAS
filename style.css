@@ -1,0 +1,135 @@
+body {
+    //background: lightblue no-repeat fixed center;
+    background: linear-gradient( rgba(0,0,139,0), rgba(0,0,139,1)) no-repeat fixed center;  
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+header{
+    position: relative;
+    display: grid;
+    display: inline-block;
+	width: auto;
+	vertical-align: center;
+	margin: 0 15px;
+	padding: 10px 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.texto{
+    background: 0;
+    color: blue;
+    font-size: 20px;
+    position: absolute;
+    margin: 100px 150px 20px;
+    padding: 1em 1em 1em;
+    width: 50%;
+    border: none;
+	border-radius: 20px;
+}
+
+.area-pesquisa div {
+    position: absolute;
+    width: 80%;
+    top: 450px; left: 250px;
+    font-size: 15px;
+}
+
+.area-pesquisa img {
+   filter: brightness(0.25) opacity(0.75);
+}
+
+.btnCriptografar {
+    width: 25%;
+    margin: 10px;
+    padding: 15px 0;
+	background: blue;
+	color: white;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.btnCriptografar:hover {
+	background: darkblue;
+	transform: scale(1.1);
+}
+
+
+.btnDescriptografar {
+	width: 25%;
+    margin: 10px;
+    padding: 15px 0;
+	background: #8cd3ff;
+	color: blue;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.btnDescriptografar:hover {
+	background: #3db5ff;
+	transform: scale(1.1);
+}
+
+.caixa-visualizar{
+        position: absolute;
+        left: 70%;  
+        font-size: 18px;
+        background: lightblue;
+        height: 550px;
+        width: 380px;
+        padding: 30px;
+        box-sizing: border-box;
+        border: 2px  solid black;
+        border-radius: 10px;     
+        font-size: 18px;
+}
+
+.caixa-visualizar p {
+    padding: 10px 10px;
+	font-size: 23px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.caixa-visualizar img {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ .btnCopiar {
+    position: absolute; top: 390px; left: 30%;
+    width: 35%;
+    margin: 10px;
+    padding: 15px 0;
+	background: blue;
+	color: white;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	transition: 1s all;
+	cursor: pointer;
+    visibility: hidden;
+}
+.btnCopiar:hover {
+	background: darkblue;
+	transform: scale(1.1);
+}
+
+footer {
+	text-align: center;
+    position: relative;
+    top: 600px;
+    padding: 5px 10%;
+}
